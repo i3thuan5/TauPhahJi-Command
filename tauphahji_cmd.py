@@ -1,11 +1,13 @@
 import json
 from urllib.parse import quote
 from http.client import HTTPSConnection
+import ssl
 
 
-def tàuphahjī(漢羅):
+def tàuphahjī(漢羅):   
     conn = HTTPSConnection(
         "xn--lhrz38b.xn--v0qr21b.xn--kpry57d"
+        , context=ssl._create_unverified_context()
     )
     conn.request(
         "GET",
@@ -15,6 +17,7 @@ def tàuphahjī(漢羅):
             quote('台語'),
             quote('查詢語句'),
             quote(漢羅),
-        )
+        ),
     )
-    return json.loads(conn.getresponse().read())['分詞']
+    responseStr = conn.getresponse().read().decode('unicode_escape')
+    return json.loads(responseStr)
