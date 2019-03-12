@@ -22,3 +22,10 @@ def tàuphahjī(漢羅):
 
     responseStr = conn.getresponse().read().decode('utf-8')
     return json.loads(responseStr)
+
+
+def liânHànjī(多元書寫):
+    return ''.join([i['漢字'].replace('.','。') for i in 多元書寫])
+
+def liânTâilô(多元書寫):
+    return '. '.join([i['臺羅'] for i in 多元書寫])
