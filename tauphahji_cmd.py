@@ -2,12 +2,12 @@ import json
 from urllib.parse import quote
 from http.client import HTTPSConnection
 import ssl
+from pip._vendor.urllib3 import response
 
 
-def tàuphahjī(漢羅):   
+def tàuphahjī(漢羅):
     conn = HTTPSConnection(
-        "xn--lhrz38b.xn--v0qr21b.xn--kpry57d"
-        , context=ssl._create_unverified_context()
+        "xn--lhrz38b.xn--v0qr21b.xn--kpry57d", context=ssl._create_unverified_context()
     )
     conn.request(
         "GET",
@@ -19,5 +19,6 @@ def tàuphahjī(漢羅):
             quote(漢羅),
         ),
     )
-    responseStr = conn.getresponse().read().decode('unicode_escape')
+
+    responseStr = conn.getresponse().read().decode('utf-8')
     return json.loads(responseStr)
