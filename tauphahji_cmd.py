@@ -3,12 +3,13 @@ from urllib.parse import urlencode
 from http.client import HTTPSConnection
 
 
-def tàuphahjī(漢羅):
+def tàuphahjī(漢羅, **tshamsoo):
     conn = HTTPSConnection(
         "hokbu.ithuan.tw"
     )
     tshamsoo = urlencode({
         'taibun': 漢羅,
+        **tshamsoo,
     })
     headers = {
         "Content-type": "application/x-www-form-urlencoded",
