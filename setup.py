@@ -1,7 +1,7 @@
 import setuptools
 from distutils.core import setup
 
-版本 = '0.1.0'
+版本 = '0.2.0'
 
 setup(
     name='Tau-Phah-Ji-Command',
