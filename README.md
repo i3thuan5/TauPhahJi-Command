@@ -2,12 +2,12 @@
 鬥拍字的指令直接包做一个套件
 
 ## Tau
-```
+```bash
 pip install Tau-Phah-Ji-Command
 ```
 
 ## Ing
-```
+```python
 >>> from tauphahji_cmd import tàuphahjī
 >>> tàuphahjī('gau5 tsa2\nlâi-khì.')
 {
