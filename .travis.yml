@@ -5,7 +5,7 @@ python:
 branches:
   only:
   - master
-  - pypi
+  - "/^\\d+\\.\\d+\\.\\d+$/"
 install:
 - pip install tox
 script:
@@ -29,4 +29,4 @@ jobs:
       username: "__token__"
       password: ${PYPI_TOKEN}
       on:
-        all_branches: true
+        tags: true
