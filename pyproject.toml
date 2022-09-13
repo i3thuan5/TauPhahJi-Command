@@ -12,8 +12,12 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+package-dir = {"tauphahji_cmd" = "tauphahji_cmd"}
+
 [tool.setuptools.packages.find]
-include = ['tauphahji_cmd']
+where = ["tauphahji_cmd"]
+exclude = ["tshi"]
 
 [bdist_wheel]
 universal = 1
