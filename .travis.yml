@@ -24,3 +24,5 @@ jobs:
       provider: pypi
       username: "__token__"
       password: ${PYPI_TOKEN}
+      on:
+        all_branches: true
