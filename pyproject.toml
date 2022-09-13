@@ -1,6 +1,9 @@
 [project]
 name = "TauPhahJi-Command"
 version = "0.1.0"
+dependencies = [
+    "tai5-uan5_gian5-gi2_kang1-ku7",
+]
 
 [metadata]
 license_file = "LICENSE"
