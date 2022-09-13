@@ -5,6 +5,7 @@ python:
 branches:
   only:
   - master
+  - pypi
 install:
 - pip install tox
 script:
