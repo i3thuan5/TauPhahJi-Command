@@ -20,6 +20,9 @@ jobs:
     name: "pypi"
     install: skip
     script: skip
+    before_deploy:
+    - pip install --upgrade setuptools build
+    - python -m build
     deploy:
       provider: pypi
       username: "__token__"
