@@ -16,7 +16,8 @@ build-backend = "setuptools.build_meta"
 package-dir = {"tauphahji_cmd" = "tauphahji_cmd"}
 
 [tool.setuptools.packages.find]
-where = ["tauphahji_cmd"]
+where = ["."]
+include = ["tauphahji_cmd"]
 exclude = ["tshi"]
 
 [bdist_wheel]
