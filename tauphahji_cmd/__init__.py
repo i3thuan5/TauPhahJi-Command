@@ -23,6 +23,7 @@ def tàuphahjī(漢羅, **tshamsoo):
     )
 
     responseStr = conn.getresponse().read().decode('utf-8')
+    conn.close()
     return json.loads(responseStr)
 
 
