@@ -5,17 +5,21 @@ python:
 branches:
   only:
   - master
+install:
+- pip install tox
+script:
+- tox -e $TOX_ENV
 jobs:
   include:
   - name: "test"
     env: TOX_ENV=test
   - name: "flake8"
     env: TOX_ENV=flake8
-install:
-- pip install tox
-script:
-- tox -e $TOX_ENV
-deploy:
-  provider: pypi
-  username: "__token__"
-  password: ${PYPI_TOKEN}
+  - stage: "deploy"
+    name: "pypi"
+    install: skip
+    script: skip
+    deploy:
+      provider: pypi
+      username: "__token__"
+      password: ${PYPI_TOKEN}
