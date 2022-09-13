@@ -1,0 +1,14 @@
+[metadata]
+name = "TauPhahJi-Command"
+version = "0.1.0"
+license_file = "LICENSE"
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+    "setuptools_scm >= 2.0.0, <3"
+]
+build-backend = "setuptools.build_meta"
+
+[bdist_wheel]
+universal = 1
