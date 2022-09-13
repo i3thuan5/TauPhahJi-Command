@@ -1,4 +1,3 @@
-import setuptools
 from distutils.core import setup
 
 版本 = '0.1.0'
@@ -7,7 +6,7 @@ setup(
     name='Tau-Phah-Ji-Command',
     version=版本,
     author='薛丞宏',
-    author_email='ihcaoe@gmail.com',
+    author_email='hong@ithuan.tw',
     url='https://github.com/i3thuan5/Tau-Phah-Ji-Command',
     py_modules=['tauphahji_cmd'],
     description='用指令叫鬥拍字',
