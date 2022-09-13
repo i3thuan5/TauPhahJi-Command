@@ -6,6 +6,7 @@ from http.client import HTTPSConnection
 from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音
 from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
 
+
 def tàuphahjī(漢羅, **tshamsoo):
     conn = HTTPSConnection(
         "hokbu.ithuan.tw"
