@@ -2,8 +2,9 @@
 鬥拍字的指令直接包做一个套件
 
 ## Tau
+因為新版本猶未deploy到PyPI，暫時先用zip。
 ```bash
-pip install Tau-Phah-Ji-Command
+pip install https://github.com/i3thuan5/TauPhahJi-Command/archive/refs/heads/master.zip
 ```
 
 ## Ing
