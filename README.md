@@ -4,7 +4,6 @@
 
 ## Tau
 
-因為新版本猶未deploy到PyPI，暫時先用zip。
 ```bash
 pip install Tau-Phah-Ji-Command
 ```
@@ -33,6 +32,6 @@ pip install Tau-Phah-Ji-Command
 
 ```python
 >>> from tauphahji_cmd import sûsìng
->>> sûsìng('逐-家｜ta̍k-ke 做-伙｜tsò-hué 來｜lâi 𨑨-迌｜tshit-thô ！|!')
-['Nh', 'D', 'D', 'VC']
+>>> sûsìng('逐-家｜ta̍k-ke 做-伙｜tsò-hué 來｜lâi 𨑨-迌｜tshit-thô ！｜!')
+['Nh', 'D', 'D', 'VC', 'PUNC']
 ```
