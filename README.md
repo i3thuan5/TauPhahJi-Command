@@ -11,7 +11,7 @@ pip install Tau-Phah-Ji-Command
 
 ## Īng
 
-### Phiau Hàn-lô
+### Phiau Tsuân-Hàn Tsuân-Lô
 
 ```python
 >>> from tauphahji_cmd import tàuphahjī
