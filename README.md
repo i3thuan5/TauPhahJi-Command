@@ -12,12 +12,12 @@ pip install https://github.com/i3thuan5/TauPhahJi-Command/archive/refs/heads/mas
 >>> from tauphahji_cmd import tàuphahjī
 >>> tàuphahjī('gau5 tsa2\nlâi-khì.')
 {
-  ## Tsuân-pōo
+  # Tsuân-pōo
   'kiatko': [
     {'漢字': '𠢕早', 'KIP': 'gâu-tsá', '分詞': '𠢕-早｜gâu-tsá'},
     {'漢字': '來去。', 'KIP': 'lâi-khì.', '分詞': '來-去｜lâi-khì 。｜.'}
   ],
-  ## Thâu-tsi̍t-kú
+  # Thâu-tsi̍t-kú
   '漢字': '𠢕早',
   'KIP': 'gâu-tsá',
   '分詞': '𠢕-早｜gâu-tsá'

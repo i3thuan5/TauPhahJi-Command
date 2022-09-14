@@ -1,0 +1,17 @@
+dist: jammy
+language: python
+python:
+- '3.10'
+branches:
+  only:
+  - master
+jobs:
+  include:
+  - name: "test"
+    env: TOX_ENV=test
+  - name: "flake8"
+    env: TOX_ENV=flake8
+install:
+- pip install tox
+script:
+- tox -e $TOX_ENV
