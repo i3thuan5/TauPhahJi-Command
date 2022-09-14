@@ -5,13 +5,28 @@ python:
 branches:
   only:
   - master
+  - "/^\\d+\\.\\d+\\.\\d+$/"
+install:
+- pip install tox
+script:
+- tox -e $TOX_ENV
 jobs:
   include:
   - name: "test"
     env: TOX_ENV=test
   - name: "flake8"
     env: TOX_ENV=flake8
-install:
-- pip install tox
-script:
-- tox -e $TOX_ENV
+  - stage: "deploy"
+    name: "pypi"
+    install: skip
+    script: skip
+    before_deploy:
+    - pip install --upgrade setuptools build
+    - python -m build
+    deploy:
+      skip_cleanup: true
+      provider: pypi
+      username: "__token__"
+      password: ${PYPI_TOKEN}
+      on:
+        tags: true
