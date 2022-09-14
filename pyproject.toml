@@ -1,6 +1,9 @@
 [project]
 name = "Tau-Phah-Ji-Command"
 version = "0.1.0"
+dependencies = [
+    "tai5-uan5_gian5-gi2_kang1-ku7",
+]
 
 authors = [
   { name="A-hông", email="hong@ithuan.tw" },
